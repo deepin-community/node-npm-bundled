@@ -1,0 +1,25 @@
+Source: node-npm-bundled
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: suman <suman@protonmail.com>
+Build-Depends: debhelper-compat (= 12)
+ , node-mutate-fs <!nocheck>
+ , node-tap <!nocheck>
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-npm-bundled
+Vcs-Git: https://salsa.debian.org/js-team/node-npm-bundled.git
+Homepage: https://github.com/npm/npm-bundled
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-npm-bundled
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Description: Parses info on bundled dependencies
+ Npm-bundled gives info regarding bundled dependencies or transitive
+ dependencies of bundled dependencies.
+ .
+ Node.js is an event-based server-side JavaScript engine.

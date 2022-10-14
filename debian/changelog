@@ -1,0 +1,21 @@
+node-npm-bundled (1.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Update VCS fields to salsa
+  * Use pkg-js-tools auto test & install
+  * Embed component npm-normalize-package-bin
+  * New upstream version 1.1.1
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 08 Mar 2020 17:15:33 +0100
+
+node-npm-bundled (1.0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #885169)
+
+ -- suman <suman@protonmail.com>  Mon, 25 Dec 2017 16:46:12 +0000

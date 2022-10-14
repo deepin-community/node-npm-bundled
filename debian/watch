@@ -1,0 +1,11 @@
+version=3
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-npm-bundled-$1.tar.gz/ \
+ https://github.com/npm/npm-bundled/tags .*/archive/v?([\d\.]+).tar.gz
+
+opts=\
+component=npm-normalize-package-bin,\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-npm-normalize-package-bin-$1.tar.gz/ \
+ https://github.com/npm/npm-normalize-package-bin/tags .*/archive/v?([\d\.]+).tar.gz ignore
